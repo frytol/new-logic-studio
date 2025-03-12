@@ -1,34 +1,55 @@
 <template>
-    <div class="x-table text-sm">
-        <table>
-            <thead class="whitespace-nowrap text-main-secondary font-bold">
-                <tr>
-                    <th>Full name</th>
-                    <th>Email</th>
-                    <th>Employment</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Agata Henderson</td>
-                    <td>a.henderson@example.com</td>
-                    <td>Interpreter</td>
-                </tr>
-                <tr>
-                    <td>Tony Johnston</td>
-                    <td>t.johnston@example.com</td>
-                    <td>Singer</td>
-                </tr>
-                <tr>
-                    <td>Maya Walker</td>
-                    <td>m.walker@example.com</td>
-                    <td>Lawer</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="flex flex-wrap gap-y-8">
+        <div class="x-table w-full text-sm">
+            <table>
+                <thead class="whitespace-nowrap text-main-secondary font-bold">
+                    <tr>
+                        <th>Číslo faktury</th>
+                        <th>Číslo objednávky</th>
+                        <th>Cena celkem</th>
+                        <th>Stažení</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="item in invoices" :key="item.invoice_number">
+                        <td>{{ item.invoice_number }}</td>
+                        <td>{{ item.order_number }}</td>
+                        <td>{{ item.total_price }}</td>
+                        <td>
+                            <a class="x-link flex justify-center items-center gap-x-1 text-primary hover:underline" href="/"> 
+                                <ArrowDownOnSquareStackIcon class="h-5 w-5 inline-block" />
+                                Stáhnout
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flex justify-end w-full">
+            <Pagination />
+        </div>
     </div>
 </template>
   
 <script setup lang="ts">
+    import { ref, onMounted } from 'vue'
 
+    import { ArrowDownOnSquareStackIcon } from '@heroicons/vue/24/outline'
+
+    import Pagination from '@/components/Pagination.vue'
+
+    const invoices = ref<any[]>([])
+
+    onMounted(async () => {
+        try {
+            const response = await fetch('/data/invoices.json')
+            if (response.ok) {
+                invoices.value = await response.json()
+            } else {
+                console.error('Chyba při načítání dat')
+            }
+        } catch (error) {
+            console.error('Chyba při načítání dat:', error)
+        }
+    })
 </script>
