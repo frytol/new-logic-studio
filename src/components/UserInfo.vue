@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-wrap justify-center" v-for="item in user">
         <span class="x-title text-main text-xl leading-relaxed">{{ item.name }}</span>
-        <span class="text-main-tertiary">{{ item.email }}</span>
+        <span class="text-main-tertiary text-sm">{{ item.email }}</span>
     </div>
 </template>
   

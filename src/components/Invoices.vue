@@ -7,7 +7,7 @@
                         <th>Číslo faktury</th>
                         <th>Číslo objednávky</th>
                         <th>Cena celkem</th>
-                        <th>Stažení</th>
+                        <th class="flex justify-end">Stažení</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -16,7 +16,7 @@
                         <td>{{ item.order_number }}</td>
                         <td>{{ item.total_price }}</td>
                         <td>
-                            <a class="x-link flex justify-center items-center gap-x-1 text-primary hover:underline" href="/"> 
+                            <a class="x-link flex justify-end items-center gap-x-1 text-primary hover:underline" href="/"> 
                                 <ArrowDownOnSquareStackIcon class="h-5 w-5 inline-block" />
                                 Stáhnout
                             </a>

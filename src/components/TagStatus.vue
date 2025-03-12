@@ -1,5 +1,5 @@
 <template>
-    <div :class="'x-badge muted ' + getModifyClass">{{getText}}</div>
+    <div :class="'x-badge muted rounded-sm ' + getModifyClass">{{getText}}</div>
 </template>
   
 <script setup lang="ts">
