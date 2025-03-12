@@ -1,5 +1,5 @@
 <template>
-    <div class="px-8 py-4">
+    <div class="py-8">
         <Heading as="h1" :title="title" />
     </div>
 </template>
