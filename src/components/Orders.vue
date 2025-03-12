@@ -2,7 +2,8 @@
     <div class="grid gap-y-8">
         <div class="grid bg-white p-6 rounded-xl" v-for="item in orders" :key="item.order_number"> 
             <div class="x-title">Číslo objednávky: {{item.order_number}}</div>
-            {{item.status}}
+            
+            <TagStatus :status="item.status" />
 
             <div class="flex flex-wrap gap-2">
                 <Image />
@@ -34,7 +35,8 @@
 <script setup lang="ts">
     import { ref, onMounted } from 'vue'
 
-    import Image from '@/components/Image.vue'  
+    import Image from '@/components/Image.vue'
+    import TagStatus from '@/components/TagStatus.vue'
 
     const orders = ref<any[]>([])
 
