@@ -28,7 +28,7 @@
         <div class="grid gap-x-3 grid-cols-3 w-full">
             <div></div>
             <div class="text-center">
-                <button class="x-button primary p-3 h-[48px]">Načíst další</button>
+                <button class="x-button primary px-6 py-3 h-[48px]">Načíst další</button>
             </div>
             <div class="flex justify-end">
                 <Pagination />
