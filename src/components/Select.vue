@@ -1,7 +1,7 @@
 <template>
     <div class="x-control">
         <select>
-            <option selected="" value="">{{ name }}</option>
+            <option selected value="">{{ name }}</option>
             <option v-for="(option, index) in options" :key="index" :value="option.value">
                 {{ option.name }}
             </option>
@@ -23,7 +23,7 @@
 
     withDefaults(defineProps<Props>(), {
         name: '',
-        options: [] as Options[]
+        options: () => [] as Options[]
     })
 
     /* @future - Add emit data to parent */
