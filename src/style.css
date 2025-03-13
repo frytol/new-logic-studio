@@ -19,7 +19,6 @@
 :root {
     --default-font-family: "Inter", sans-serif;
     --x-button-border-radius: var(--radius-lg);
-    --x-button-hover-background-color: var(--color-primary);
     --x-table-border-color: transparent;
     --x-table-cell-border-inline-width: 0;
     --x-table-cell-spacing-y: 1.125rem;
