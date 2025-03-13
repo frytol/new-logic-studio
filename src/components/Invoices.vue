@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-wrap w-full gap-y-8 overflow-x-auto">
-        <div class="x-table w-full text-sm">
+    <div class="grid flex-wrap w-full gap-y-8">
+        <div class="x-table w-full text-sm overflow-x-auto">
             <table>
                 <thead class="whitespace-nowrap text-main-secondary font-bold">
                     <tr class="border-b border-body-secondary">

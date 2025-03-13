@@ -1,7 +1,7 @@
 <template>
-    <div class="py-8">
+    <header class="py-8">
         <Heading as="h1" :title="title" />
-    </div>
+    </header>
 </template>
   
 <script setup lang="ts">

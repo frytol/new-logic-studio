@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full">
+    <nav class="w-full">
         <!-- @FUTURE - Use v-for and json -->
         <ul class="flex flex-wrap gap-y-3">
             <li class="w-full">
@@ -101,7 +101,7 @@
                 </router-link>
             </li>
         </ul>
-    </div>
+    </nav>
 </template>
   
 <script setup lang="ts">

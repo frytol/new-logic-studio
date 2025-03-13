@@ -1,10 +1,12 @@
 <template>
     <Header :title="pageTitle" />
 
-    <div class="grid grid-cols-[1fr] lg:grid-cols-[256px_1fr] gap-8">
+    <main class="grid grid-cols-[1fr] lg:grid-cols-[256px_1fr] gap-8">
         <Aside />
-        <Form />
-    </div>
+        <section class="w-full">
+            <Form />
+        </section>
+    </main>
 </template>
   
 <script setup lang="ts">
