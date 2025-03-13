@@ -1,5 +1,5 @@
 <template>
-    <div class="x-control">
+    <div class="x-control rounded-lg">
         <select>
             <option value="">{{ name }}</option>
             <option v-for="(option, index) in options" :key="index" :value="option.value">

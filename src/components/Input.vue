@@ -1,5 +1,5 @@
 <template>
-    <div class="x-control">
+    <div class="x-control rounded-lg">
         <input :type="type" :id="name_db" :placeholder="placeholder" :required="required">
         <label :for="name_db">{{name}}</label>
     </div>

@@ -1,6 +1,6 @@
 <template>
     <div class="x-check">
-        <input type="checkbox" :id="name_db">
+        <input class="rounded-sm" type="checkbox" :id="name_db">
         <label :for="name_db">{{name}}</label>
     </div>
 </template>
