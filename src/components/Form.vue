@@ -3,20 +3,22 @@
         <h2 class="x-title w-full text-lg">Kontaktní údaje</h2>
 
         <div class="w-full grid grid-cols-2 grid-rows-auto gap-3 lg:grid-cols-4">
-            <Input class="col-span-2" type="text" name="Jméno" db="first_name" />
-            <Input class="col-span-2" type="text" name="Příjmení" db="last_name" />
-            <Input class="col-span-2" type="tel" name="Telefon" db="phone" />
-            <Input class="col-span-2" type="email" name="E-mail" db="email" />
+            <Input class="col-span-2" type="text" name="Jméno" db="first_name" :required=true />
+            <Input class="col-span-2" type="text" name="Příjmení" db="last_name" :required=true />
+            <!-- @TODO - Placeholder -->
+            <Input class="col-span-2" type="tel" name="Telefon" db="phone" placeholder="+420 123 456 789" />
+            <!-- @TODO - Icon for error -->
+            <Input class="col-span-2" type="email" name="E-mail" db="email" :required=true />
         </div>
 
         <hr class="h-px bg-body-secondary border-0 dark:bg-body-secondary">
 
         <h2 class="x-title w-full text-lg">Fakturační údaje</h2>
         <div class="w-full grid grid-cols-2 grid-rows-auto gap-3 lg:grid-cols-4">
-            <Input class="col-span-2" type="text" name="Jméno" db="first_name_2" />
-            <Input class="col-span-2" type="text" name="Příjmení" db="last_name_2" />
-            <Input class="col-span-2" type="text" name="Název firmy" db="company" />
-            <Input class="col-span-1" type="text" name="IČ" db="ic" />
+            <Input class="col-span-2" type="text" name="Jméno" db="first_name_2" :required=true />
+            <Input class="col-span-2" type="text" name="Příjmení" db="last_name_2" :required=true />
+            <Input class="col-span-2" type="text" name="Název firmy" db="company" :required=true />
+            <Input class="col-span-1" type="text" name="IČ" db="ic" :required=true />
             <Input class="col-span-1" type="text" name="DIČ" db="dic" />
             <Input class="col-span-2" type="text" name="Ulice a číslo popisné" db="address" />
             <Input class="col-span-2" type="text" name="Město" db="city" />

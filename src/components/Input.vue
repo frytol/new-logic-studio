@@ -1,6 +1,6 @@
 <template>
     <div class="x-control">
-        <input :type="type" :id="name_db" :placeholder="placeholder">
+        <input :type="type" :id="name_db" :placeholder="placeholder" :required="required">
         <label :for="name_db">{{name}}</label>
     </div>
 </template>
@@ -10,14 +10,16 @@
         type?: string,
         name?: string,
         name_db?: string,
-        placeholder?: string
+        placeholder?: string,
+        required?: boolean
     }
 
     withDefaults(defineProps<Props>(), {
         type: 'text',
         name: '',
         name_db: '',
-        placeholder: ''
+        placeholder: '',
+        required: false
     })
 
     /* @future - Add emit data to parent */
