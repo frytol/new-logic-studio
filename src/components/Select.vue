@@ -1,12 +1,11 @@
 <template>
     <div class="x-control">
         <select>
-            <option selected value="">{{ name }}</option>
+            <option value="">{{ name }}</option>
             <option v-for="(option, index) in options" :key="index" :value="option.value">
                 {{ option.name }}
             </option>
         </select>
-        <label>{{ name }}</label>
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-wrap self-start bg-white px-6 py-8 rounded-xl gap-y-6">
+    <div class="flex flex-wrap self-start w-full bg-white px-6 py-8 rounded-xl gap-y-6">
         <UserInfo />
         <Nav />
         <Logout />

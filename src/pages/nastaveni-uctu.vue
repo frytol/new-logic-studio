@@ -1,7 +1,7 @@
 <template>
     <Header :title="pageTitle" />
 
-    <div class="grid grid-cols-[1fr] lg:grid-cols-[256px_1fr] gap-x-8">
+    <div class="grid grid-cols-[1fr] lg:grid-cols-[256px_1fr] gap-8">
         <Aside />
         <Form />
     </div>

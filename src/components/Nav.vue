@@ -4,7 +4,7 @@
         <ul class="flex flex-wrap gap-y-3">
             <li class="w-full">
                 <router-link 
-                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3" 
+                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 hover:text-white" 
                     :to="`/moje-objednavky`"
                     :class="{
                         'accent-primary': $route.path === '/moje-objednavky',
@@ -18,7 +18,7 @@
             </li>
             <li class="w-full">
                 <router-link 
-                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold" 
+                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold hover:text-white" 
                     :to="`/faktury`"
                     :class="{
                         'accent-primary': $route.path === '/faktury',
@@ -32,7 +32,7 @@
             </li>
             <li class="w-full">
                 <router-link 
-                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold" 
+                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold hover:text-white" 
                     :to="`/`"
                     :class="{
                         'accent-primary': $route.path === '/',
@@ -46,7 +46,7 @@
             </li>
             <li class="w-full">
                 <router-link 
-                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold" 
+                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold hover:text-white" 
                     :to="`/`"
                     :class="{
                         'accent-primary': $route.path === '/',
@@ -60,7 +60,7 @@
             </li>
             <li class="w-full">
                 <router-link 
-                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold" 
+                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold hover:text-white" 
                     :to="`/`"
                     :class="{
                         'accent-primary': $route.path === '/',
@@ -74,7 +74,7 @@
             </li>
             <li class="w-full">
                 <router-link 
-                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold" 
+                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold hover:text-white" 
                     :to="`/`"
                     :class="{
                         'accent-primary': $route.path === '/',
@@ -88,7 +88,7 @@
             </li>
             <li class="w-full">
                 <router-link 
-                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold" 
+                    class="x-button flex justify-between items-center gap-x-2 w-full h-[40px] rounded-lg p-3 font-semibold hover:text-white" 
                     :to="`/nastaveni-uctu`"
                     :class="{
                         'accent-primary': $route.path === '/nastaveni-uctu',

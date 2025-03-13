@@ -1,15 +1,16 @@
 <template>
-    <div class="flex flex-wrap gap-y-8">
+    <div class="flex flex-wrap w-full gap-y-8 overflow-x-auto">
         <div class="x-table w-full text-sm">
             <table>
                 <thead class="whitespace-nowrap text-main-secondary font-bold">
-                    <tr>
+                    <tr class="border-b border-body-secondary">
                         <th>Číslo faktury</th>
                         <th>Číslo objednávky</th>
                         <th>Cena celkem</th>
                         <th class="flex justify-end">Stažení</th>
                     </tr>
                 </thead>
+                <!-- @note - In figma is spacing 1.5rem(top) and 1rem(bottom) /new-logic-studio/src/style.css (--x-table-cell-spacing-y, --x-table-cell-spacing-x) -->
                 <tbody>
                     <tr v-for="item in invoices" :key="item.invoice_number">
                         <td>{{ item.invoice_number }}</td>
@@ -25,12 +26,12 @@
                 </tbody>
             </table>
         </div>
-        <div class="grid gap-x-3 grid-cols-3 w-full">
-            <div></div>
-            <div class="text-center">
+        <div class="grid gap-y-6 grid-cols-1 w-full lg:grid-cols-3 lg:gap-x-3">
+            <div class="col-span-1 text-center hidden lg:block"></div>
+            <div class="col-span-1 text-center">
                 <button class="x-button primary px-6 py-3 h-[48px]">Načíst další</button>
             </div>
-            <div class="flex justify-end">
+            <div class="flex justify-center col-span-1 text-center lg:justify-end">
                 <Pagination />
             </div>
         </div>
