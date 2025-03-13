@@ -1,3 +1,4 @@
+/* @future - What I actually use? */
 @import "tailwindcss/theme.css" layer(theme);
 @import "winduum/tailwindcss/theme/config/index.css" layer(theme);
 @import "winduum/tailwindcss/theme/default.css" layer(theme);
