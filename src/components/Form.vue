@@ -33,7 +33,7 @@
 
         <div class="grid gap-3 grid-cols-[auto_auto] w-full lg:grid-cols-[auto_auto_1fr]">
             <button class="x-button primary py-3 px-6 h-[40px]">Uložit změny</button>
-            <button class="x-button bordered accent-primary py-3 px-6 h-[40px]">Změnit heslo</button>
+            <button class="x-button bordered accent-primary text-main py-3 px-6 h-[40px]">Změnit heslo</button>
             <button class="x-button bordered accent-error py-3 px-6 h-[40px] col-span-2 lg:ml-auto lg:col-span-1">Zrušit účet</button>
         </div>
     </div>
